@@ -43,8 +43,7 @@ Open `index.html in browser`
 +++
 
 ```bash
-$ npm install --save-dev webpack
-$ npm install --save lodash-es
+$ npm install --save-dev webpack lodash-es
 ```
 
 +++
@@ -162,6 +161,17 @@ module.exports = {
 };
 ```
 
+#### `package.json`
+```diff
+{
+  ...
+  "scripts": {
++   "build": "webpack"
+  },
+  ...
+}
+```
+
 ```bash
-$ ./node_modules/.bin/webpack
+$ npm run build
 ```
