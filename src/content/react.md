@@ -42,8 +42,6 @@ import './app.scss';
 ...
 ```
 
-+++
-
 #### `.babelrc`
 ```diff
 }
@@ -53,6 +51,3 @@ import './app.scss';
 + "plugins": ["transform-react-jsx"]
 }
 ```
-
----
-
