@@ -1,0 +1,40 @@
+version: 2
+jobs:
+  build:
+    docker:
+     - image: node:7
+
+    working_directory: ~/webpack-intro-slides
+
+    environment:
+      NODE_ENV: test
+
+    branches:
+      ignore:
+        - gh-pages
+
+    steps:
+      - checkout
+      - run: git submodule sync && git submodule update --init
+
+      # Generator npm dependencies
+      - restore_cache:
+          keys:
+            - webpack-intro-slides-npm-{{ .Branch }}-{{ checksum "package.json" }}
+            - webpack-intro-slides-npm-{{ .Branch }}
+            - webpack-intro-slides-npm-
+      - run: npm install --quiet
+      - save_cache:
+          key: webpack-intro-slides-npm-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - ~/webpack-intro-slides/node_modules
+
+      - run: npm test
+
+      - deploy:
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              git config --global user.email "circleci@circleci.com"
+              git config --global user.name "CircleCI"
+              npm run deploy
+            fi
