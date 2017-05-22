@@ -194,7 +194,7 @@ if(false) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_reveal_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_reveal_js__);
 
 
-var libPath = './reveal.js/';
+const libPath = './reveal.js/';
 
 __WEBPACK_IMPORTED_MODULE_0_reveal_js___default.a.initialize({
   width: '100%',
@@ -203,9 +203,9 @@ __WEBPACK_IMPORTED_MODULE_0_reveal_js___default.a.initialize({
     // Cross-browser shim that fully implements classList
     {
       src: libPath + 'lib/js/classList.js',
-      condition: function() { 
-        return !document.body.classList; 
-      } 
+      condition: function() {
+        return !document.body.classList;
+      }
     },
 
     // Interpret Markdown in <section> elements
