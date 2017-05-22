@@ -175,8 +175,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./main.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./main.css");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./main.scss", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./main.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -310,7 +310,7 @@ exports.i(__webpack_require__(4), "");
 exports.i(__webpack_require__(9), "");
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".reveal p {\n  font-size: 32px; }\n\n.reveal h1 {\n  font-size: 3.2em; }\n\n.reveal pre code {\n  line-height: 30px;\n  font-size: 26px; }\n", ""]);
 
 // exports
 
@@ -5874,8 +5874,8 @@ module.exports = function (css) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__css_main_css__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__css_main_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__css_main_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__css_main_scss__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__css_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__css_main_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_config_js__ = __webpack_require__(3);
 // CSS imports
 

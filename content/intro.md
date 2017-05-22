@@ -12,7 +12,7 @@ $ mkdir myapp && cd $_
 $ git init
 $ echo -e 'node_modules/\ndist' > .gitignore
 $ npm init -y
-$ npm install --save-dev webpack lodash-es babel-loader babel-core babel-preset-env
+$ npm install --save-dev webpack lodash-es {babel,style,css,sass}-loader babel-core babel-preset-env node-sass
 ```
 
 ---
