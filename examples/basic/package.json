@@ -1,0 +1,16 @@
+{
+  "name": "simplest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lodash-es": "^4.17.4",
+    "webpack": "^2.5.1"
+  }
+}
