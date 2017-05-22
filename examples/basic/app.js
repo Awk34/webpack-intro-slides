@@ -1,5 +1,7 @@
 import join from 'lodash-es/join';
 
+import './app.scss';
+
 function component() {
     let element = document.createElement('div');
 

@@ -1,0 +1,17 @@
+@import url('~reveal.js/css/reveal.css');
+@import url('~reveal.js/css/theme/moon.css');
+@import url('~highlight.js/styles/atom-one-dark.css');
+@import url('styles.css');
+
+.reveal p {
+  font-size: 32px;
+}
+
+.reveal h1 {
+  font-size: 3.2em;
+}
+
+.reveal pre code {
+  line-height: 30px;
+  font-size: 26px;
+}
