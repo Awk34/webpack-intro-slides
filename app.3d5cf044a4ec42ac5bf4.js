@@ -194,7 +194,7 @@ if(false) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_reveal_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_reveal_js__);
 
 
-var libPath = '../reveal.js/';
+var libPath = './reveal.js/';
 
 __WEBPACK_IMPORTED_MODULE_0_reveal_js___default.a.initialize({
   width: '100%',
