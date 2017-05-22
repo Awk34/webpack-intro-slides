@@ -1,6 +1,19 @@
 # Up and Running with Webpack
 
-Slides available at https://github.com/Awk34/webpack-intro-slides
+Slides available at https://awk34.github.io/webpack-intro-slides/
+
+
+### Get a head start:
+
+Latest Node.js: 7.10.0
+
+```bash
+$ mkdir myapp && cd $_
+$ git init
+$ echo -e 'node_modules/\ndist' > .gitignore
+$ npm init -y
+$ npm install --save-dev webpack lodash-es babel-loader babel-core babel-preset-env
+```
 
 ---
 
