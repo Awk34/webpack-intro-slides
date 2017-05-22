@@ -1,0 +1,28 @@
+{
+  "name": "webpack-intro-slides",
+  "version": "1.0.0",
+  "description": "Slides for Webpack Workshop",
+  "main": "dist/bundle.js",
+  "repository": {},
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && webpack",
+    "start": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.1",
+    "file-loader": "^0.11.1",
+    "html-webpack-plugin": "^2.22.0",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "highlight.js": "^9.11.0",
+    "reveal.js": "^3.5.0"
+  }
+}
