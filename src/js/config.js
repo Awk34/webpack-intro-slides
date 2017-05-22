@@ -1,6 +1,6 @@
 import Reveal from 'reveal.js';
 
-var libPath = '../reveal.js/';
+const libPath = './reveal.js/';
 
 Reveal.initialize({
   width: '100%',
@@ -9,9 +9,9 @@ Reveal.initialize({
     // Cross-browser shim that fully implements classList
     {
       src: libPath + 'lib/js/classList.js',
-      condition: function() { 
-        return !document.body.classList; 
-      } 
+      condition: function() {
+        return !document.body.classList;
+      }
     },
 
     // Interpret Markdown in <section> elements

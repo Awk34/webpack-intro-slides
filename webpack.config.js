@@ -27,7 +27,7 @@ module.exports = {
         }),
         new CopyWebpackPlugin([
             {from: {glob: 'content/*.md'}},
-            {from: '../reveal.js/', to: __dirname + '/dist/reveal.js/'},
+            {from: './reveal.js/', to: __dirname + '/dist/reveal.js/'},
         ])
     ],
     devServer: {
